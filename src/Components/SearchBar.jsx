@@ -1,7 +1,12 @@
-export default function SearchBar() {
+/* eslint-disable react/prop-types */
+export default function SearchBar({ onSubmit }) {
+  const handleClick = () => {
+    onSubmit("cars");
+  };
   return (
     <div>
-      <h1>Search Bar</h1>
+      <input />
+      <button onClick={handleClick}>Search!!</button>
     </div>
   );
 }
